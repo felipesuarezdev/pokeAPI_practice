@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    background-color: #ff5005;
+    color: #e9da30;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 1rem;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo de la grilla */
+/* - Aplicamos grilla como lo visto en clases 
+- con el autofill nos aseguramos que la cantidad de pokemones que apareceran en cada linea, 
+se ajuste segun el ancho de la pantalla */
+/* - agregamos 1 rem de gap para separar cada carta  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+/* Estilo de los elementos de Pokémon */
+.pokemon-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.pokemon-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
